@@ -16,7 +16,40 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 
 ### Understanding Public & Private Subnets in AWS VPC
 #### Creating a Public Subnet
+
 #### Creating a Private Subnet
+
 #### Working With Public & Private Subnets
 
 ## Internet Gateway & Routing Table
+
+#### Introduction to Internet Gateway & Table
+
+#### What is an Internet Gateway?
+
+#### Public Subnets
+
+## What is a Routing Table?
+
+### Creating & Configuring Routing Tables
+
+## NAT Gateway & Private Subnets
+### Introduction to Private Subnets & NAT Gateway
+
+### Understanding NAT Gateway
+
+### Creating a NAT Gateway & Linking it to a Private Subnet
+
+## Security Group & Network ACLs
+
+### Understanding the Differences between Security Groups & Network Access Control Lists
+
+### Network Access Control {NACLs}
+
+## VPC Peering & VPN Connection
+
+### Introduction to VPC Peering
+
+### Benefits of VPC Peering
+
+### Benefits of VPN Connections

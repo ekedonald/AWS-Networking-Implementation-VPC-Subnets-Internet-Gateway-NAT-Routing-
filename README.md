@@ -60,4 +60,6 @@ There are two primary types of VPN connections which are:
 
 1. **Site-to-Site VPN**: It establishes a secure connetion between your on-premises network and the cloud provider's network. It allows communication between your on-premises resources and resources in the VPC securely and privately. This type of VPN connection is commonly used in Hybrid Cloud Architectures.
 
+2. **AWS Client VPN**: AWS Client VPN provides secure remote acces to the cloud network for individual users or devices. It enables secure connectivity for remote employees, partners or contractors to access resoruces in the VPC securely.
+
 ### Benefits of VPN Connections

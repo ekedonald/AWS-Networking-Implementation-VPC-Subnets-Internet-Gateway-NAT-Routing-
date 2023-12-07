@@ -14,15 +14,26 @@ A Default VPC which Amazon provides for you in each region (think of a region as
 #### What are Subnets?
 Subnets are like smaller segments within a VPC that help you organize and manage your resources. Subnets are like dividing an office building into smaller sections, where each section represents a department. In this analogy, subents are created to organize and manage the network effectively.
 
+| Subnet Name     | Availability Zone | CIDR Block   |
+|-----------------|-------------------|--------------|
+| Public-Subnet1  | us-east-1a        | 10.0.11.0/24 |
+| Public-Subnet2  | us-east-1b        | 10.0.12.0/24 |
+| Private-Subnet1 | us-east-1a        | 10.0.1.0/24  |
+| Private-Subnet2 | us-east-1b        | 10.0.2.0/24  |
+
 ### Understanding Public & Private Subnets in AWS VPC
+In the world of AWS VPC, think of subnets as individual plots in your land (VPC). Some of these plots (subnets) have direct road access (internet access), these are Public Subnets. Others are more private tucked away without direct road access, these are Private Subnets.
+
 #### Creating a Public Subnet
 
 #### Creating a Private Subnet
 
 #### Working With Public & Private Subnets
+Public subnet are great for resources that need to connect to the internet like **web servers**. Private subnets are great for resources that you don't want to expose to the internet like **databases**.
+
+Understanding public and private subnets helps you to organize and protect your AWS resources better. Always remember that public subnets are used for resources that need internet access and private subnets are for resources you want to keep private.
 
 ## Internet Gateway & Routing Table
-
 #### Introduction to Internet Gateway & Table
 In a real city, your virtual city (VPC) needs roads (Internet Gateway) for people (data) to come and go. You also need a map/GPS (Routing Table) to tell people (data) which way to go to reach their destination.
 

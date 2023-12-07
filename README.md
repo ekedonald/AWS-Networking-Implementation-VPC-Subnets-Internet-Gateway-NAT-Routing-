@@ -24,6 +24,7 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 ## Internet Gateway & Routing Table
 
 #### Introduction to Internet Gateway & Table
+In a real city, your virtual city (VPC) needs roads (Internet Gateway) for people (data) to come and go. You also need a map/GPS (Routing Table) to tell people (data) which way to go to reach their destination.
 
 #### What is an Internet Gateway?
 An Internet Gateway in AWS is like a road that connects your city (VPC) to the outside world (the internet). Without this road, people (data) can't come in or go out of your city.

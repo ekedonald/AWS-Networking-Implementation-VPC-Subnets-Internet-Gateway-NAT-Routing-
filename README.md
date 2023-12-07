@@ -35,8 +35,12 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway
+In the AWS Virtual Private Cloud (VPC), private subnets are secluded areas where you can place resources that should not be exposed to the internet. But what if these resources need to access the internet for updates/downloads? This is wjere NAT Gateway comes in.
 
 ### Understanding NAT Gateway
+A Network Address Translation (NAT) Gateway acts like a secure door that only opens one way. It allows your resources inside the private subnet to access the interent for things like updates and downloads but it doesn't allow anything from the internet to enter your private subnet.
+
+It allows instances in your private subent to connect to connect to outside services like Databses but restricts external services from connecting to these instances.
 
 ### Creating a NAT Gateway & Linking it to a Private Subnet
 

@@ -49,7 +49,15 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 ## VPC Peering & VPN Connection
 
 ### Introduction to VPC Peering
+VPC Peering is a networking feature that allows you to connect 2 Virtual Private Clouds (VPCs) within the same cloud provider's network or across different regions. VPC Peering enables direct communicstion between VPCs allowing resources in each VPC to interact with eacg other as if they were on the same network. It provides a secure and private connection without the need for internet access. VPC Peering is commonly used to establish connectivity between VPCs in scenarios such as multi-tier apllications, resouce sharing or data replication.
 
 ### Benefits of VPC Peering
+
+### Inroduction to VPN Connections
+Virtual Private Network (VPN) connections establish a secure and encrypted communication channel betwen your on-premises network and a cloud provider's network such as a VPC. VPN connections enable secure access to resourcs in the cloud from remote locations or connect on-premuses netwokrs with cloud resources.
+
+There are two primary types of VPN connections which are:
+
+1. **Site-to-Site VPN**: It establishes a secure connetion between your on-premises network and the cloud provider's network. It allows communication between your on-premises resources and resources in the VPC securely and privately. This type of VPN connection is commonly used in Hybrid Cloud Architectures.
 
 ### Benefits of VPN Connections

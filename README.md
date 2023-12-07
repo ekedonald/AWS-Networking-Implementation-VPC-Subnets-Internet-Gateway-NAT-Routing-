@@ -26,6 +26,9 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 #### Introduction to Internet Gateway & Table
 
 #### What is an Internet Gateway?
+An Internet Gateway in AWS is like a road that connects your city (VPC) to the outside world (the internet). Without this road, people (data) can't come in or go out of your city.
+
+To give your public subent access to the main road (internet), you need an Internet Gateway. This acts like the entrance and exit to your property. 
 
 #### Public Subnets
 

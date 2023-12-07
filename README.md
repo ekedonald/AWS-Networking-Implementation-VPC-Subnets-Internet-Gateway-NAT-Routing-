@@ -30,8 +30,10 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 #### Public Subnets
 
 ## What is a Routing Table?
+It is a like a map/GPS. It tells the people (data) in your city (VPC) which way to go to reach their destination. For example, if the data wants to go to the internet, the Routing Table will tell it to take the road (Internet Gateway) that you built.
 
 ### Creating & Configuring Routing Tables
+The following steps are taken to create and configure a routing table to direct resources in the Public Subnet to the Internet Gateway.
 
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway
@@ -43,6 +45,7 @@ A Network Address Translation (NAT) Gateway acts like a secure door that only op
 It allows instances in your private subent to connect to connect to outside services like Databses but restricts external services from connecting to these instances.
 
 ### Creating a NAT Gateway & Linking it to a Private Subnet
+The following steps are taken to create a NAT Gateway and link it to your Private Subnet.
 
 ## Security Group & Network ACLs
 ### Understanding the Differences between Security Groups & Network Access Control Lists

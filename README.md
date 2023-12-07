@@ -9,6 +9,7 @@ The default VPC is like a starter pack provided by amazon for your cloud resourc
 A Default VPC which Amazon provides for you in each region (think of a region as a separate city) is like a pre-built house in that city. This house comes with some defaukt settings to help you move in and start living (or start deploying your applications) immediately but juat like a real house, you can change these settings according to your needs.
 
 ### Creating a new VPC
+The following steps are taken to create a VPC:
 
 ### Creating & Configuring Subnets
 #### What are Subnets?
@@ -25,8 +26,10 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 In the world of AWS VPC, think of subnets as individual plots in your land (VPC). Some of these plots (subnets) have direct road access (internet access), these are Public Subnets. Others are more private tucked away without direct road access, these are Private Subnets.
 
 #### Creating a Public Subnet
+The following steps are taken to create 2 Public Subnets:
 
 #### Creating a Private Subnet
+The following steps are taken to create 2 Private Subnets:
 
 #### Working With Public & Private Subnets
 Public subnet are great for resources that need to connect to the internet like **web servers**. Private subnets are great for resources that you don't want to expose to the internet like **databases**.

@@ -41,13 +41,16 @@ Subnets are like smaller segments within a VPC that help you organize and manage
 ### Creating a NAT Gateway & Linking it to a Private Subnet
 
 ## Security Group & Network ACLs
-
 ### Understanding the Differences between Security Groups & Network Access Control Lists
+Security groups abd network access lists (ACLs) are both important tools for securing your network on the AWS cloud but they serve diffrenct purposes and have different use cases.
 
-### Network Access Control {NACLs}
+#### Security Groups
+
+#### Network Access Control (NACLs)
+
+In short, security groups and network ACLs are both important tools for securing your network on the AWS cloud but they serve different purposes and have different use cases. Security groups are like a bouncer at a club controlling inbound and outbound traffic to and from your resources at the individual resource level. Network ACLs on the other hand are like a security guard for a building controlling inbound and outbound traffic at the subnet level.
 
 ## VPC Peering & VPN Connection
-
 ### Introduction to VPC Peering
 VPC Peering is a networking feature that allows you to connect 2 Virtual Private Clouds (VPCs) within the same cloud provider's network or across different regions. VPC Peering enables direct communicstion between VPCs allowing resources in each VPC to interact with eacg other as if they were on the same network. It provides a secure and private connection without the need for internet access. VPC Peering is commonly used to establish connectivity between VPCs in scenarios such as multi-tier apllications, resouce sharing or data replication.
 

@@ -115,5 +115,5 @@ There are two primary types of VPN connections which are:
 
 * **Hybrid Cloud Connectivity**: VPN connections play a vital role in establishing secure and reliable connectivity between your on-premises network and cloud resources facilitating hybrid cloud architectures and seamless integration.
 
-**Summary**
-In summary, VPC Peering enables direct communication between VPCs simplifying network architecture and enhancing resource sharing within the cloud network. VPN connections establish secure tunnels between on-premises networks and the cloud enabling secure remote access and facilitating hybrid connectivity. Both VPC Peering and VPN connections contribute to building secure, scalable and efficient network infrastructures in cloud environments.
+#### Summary
+VPC Peering enables direct communication between VPCs simplifying network architecture and enhancing resource sharing within the cloud network. VPN connections establish secure tunnels between on-premises networks and the cloud enabling secure remote access and facilitating hybrid connectivity. Both VPC Peering and VPN connections contribute to building secure, scalable and efficient network infrastructures in cloud environments.

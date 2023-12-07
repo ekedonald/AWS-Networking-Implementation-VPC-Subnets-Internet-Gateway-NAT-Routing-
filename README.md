@@ -46,6 +46,13 @@ An Internet Gateway in AWS is like a road that connects your city (VPC) to the o
 To give your public subent access to the main road (internet), you need an Internet Gateway. This acts like the entrance and exit to your property. 
 
 #### Public Subnets
+Technically, the subnets are still private. To make the subnets function as public subnets, the following steps must be taken:
+* An Internet Gateway (IGW) attached to the VPC
+* Route Table wiht default route towards to the IGW
+* Public IP assigned to the AWS resources (i.e. EC2 Instances)
+
+#### Creating an Internet Gateway
+The following steps are taken to create an Internet Gateway:
 
 ## What is a Routing Table?
 It is a like a map/GPS. It tells the people (data) in your city (VPC) which way to go to reach their destination. For example, if the data wants to go to the internet, the Routing Table will tell it to take the road (Internet Gateway) that you built.

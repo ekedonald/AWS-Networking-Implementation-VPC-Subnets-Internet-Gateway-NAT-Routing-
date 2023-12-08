@@ -11,6 +11,18 @@ A Default VPC which Amazon provides for you in each region (think of a region as
 ### Creating a new VPC
 The following steps are taken to create a VPC:
 
+* On your VPC dashboard, click on the `Create VPC` button.
+
+* Use the following parameters when configuring the VPC:
+1. Resource to create: VPC only
+2. Name tag: first-vpc
+3. IPv4 CIDR block: IPv4 CIDR manual input
+4. IPv4 CIDR: 10.0.0.0/16
+5. IPv6 CIDR block: No IPv6 CIDR block
+6. Tenancy: Default
+
+* Click on the `Create VPC` button.
+
 ### Creating & Configuring Subnets
 #### What are Subnets?
 Subnets are like smaller segments within a VPC that help you organize and manage your resources. Subnets are like dividing an office building into smaller sections, where each section represents a department. In this analogy, subnets are created to organize and manage the network effectively.

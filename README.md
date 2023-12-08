@@ -108,11 +108,22 @@ Technically, the subnets are still private. To make the subnets function as publ
 #### Creating an Internet Gateway
 The following steps are taken to create an Internet Gateway:
 
+* Go to your VPC dashboard and click on the `Internet Gateways` tab.
+
+* Click on the `Create internet gateway` button.
+
+* Name the internet gateway `test-igw` and click on `Create internet gateway`.
+
+* Click on the `Action` button and click `Attach to VPC`.
+
+* Select the `first-vpc` you created and clcik on the `Attach internet gateway` button.
+
+
 ## What is a Routing Table?
 It is like a map/GPS. It tells the people (data) in your city (VPC) which way to go to reach their destination. For example, if the data wants to go to the internet, the Routing Table will tell it to take the road (Internet Gateway) that you built.
 
 ### Creating & Configuring Routing Tables
-The following steps are taken to create and configure a routing table to direct resources in the Public Subnet to the Internet Gateway.
+The following steps are taken to create and configure a routing table to direct resources in the Public Subnet to the Internet Gateway:
 
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway

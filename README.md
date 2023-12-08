@@ -46,11 +46,19 @@ The following steps are taken to create 2 Public Subnets:
 
 * Select the VPC (i.e. first-vpc) you created.
 
-* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: Public-Subnet1, us-east-1a and 10.0.11.0/24.
+*  Use the following parameters when configuring the 1st Public Subnet:
+1. Subnet Name: Public-Subnet1
+2. Availability Zone: us-east-1a
+3. IPv4 Subnet CIDR Block: 10.0.11.0/24
 
 * Click on the `Add new subnet` button to create the 2nd Public Subnet.
 
-* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: Public-Subnet2, us-east-1b and 10.0.12.0/24 then click on the `create subnet` button.
+* Use the following parameters when configuring the 2nd Public Subnet:
+1. Subnet Name: Public-Subnet2
+2. Availability Zone: us-east-1b
+3. IPv4 Subnet CIDR Block: 10.0.12.0/24
+
+* Click on the `create subnet` button.
 
 _The 2 Public Subnets created are shown above_
 
@@ -61,11 +69,19 @@ The following steps are taken to create 2 Private Subnets:
 
 * Select the VPC (i.e. first-vpc) you created.
 
-* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: **Private-Subnet1**, **us-east-1a** and **10.0.1.0/24**.
+*  Use the following parameters when configuring the 1st Private Subnet:
+1. Subnet Name: Private-Subnet1
+2. Availability Zone: us-east-1a
+3. IPv4 Subnet CIDR Block: 10.0.1.0/24
 
 * Click on the `Add new subnet` button to create the 2nd Public Subnet.
 
-* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: **Private-Subnet2**, **us-east-1b** and **10.0.2.0/24** then click on the `create subnet` button.
+*  Use the following parameters when configuring the 2nd Private Subnet:
+1. Subnet Name: Private-Subnet2
+2. Availability Zone: us-east-1b
+3. IPv4 Subnet CIDR Block: 10.0.2.0/24
+
+* Click on the `create subnet` button.
 
 _The 2 Private Subnets created are shown above_
 

@@ -27,6 +27,7 @@ In the world of AWS VPC, think of subnets as individual plots in your land (VPC)
 
 #### Creating a Public Subnet
 The following steps are taken to create 2 Public Subnets:
+
 * Click on the `Subnets` tab on the VPC dashboard.
 
 * Click on the `Create subnet` button.
@@ -37,12 +38,24 @@ The following steps are taken to create 2 Public Subnets:
 
 * Click on the `Add new subnet` button to create the 2nd Public Subnet.
 
-* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: Public-Subnet1, us-east-1b and 10.0.12.0/24 then click on the `create subnet` button.
+* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: Public-Subnet2, us-east-1b and 10.0.12.0/24 then click on the `create subnet` button.
 
 _The 2 Public Subnets created are shown above_
 
 #### Creating a Private Subnet
 The following steps are taken to create 2 Private Subnets:
+
+* Click on the `Create subnet` button.
+
+* Select the VPC (i.e. first-vpc) you created.
+
+* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: **Private-Subnet1**, **us-east-1a** and **10.0.1.0/24**.
+
+* Click on the `Add new subnet` button to create the 2nd Public Subnet.
+
+* Give the Subnet Name, Availability Zone and IPv4 Subnet CIDR Block the following parameters: **Private-Subnet2**, **us-east-1b** and **10.0.2.0/24** then click on the `create subnet` button.
+
+_The 2 Private Subnets created are shown above_
 
 #### Working With Public & Private Subnets
 Public Subnets are great for resources that need to connect to the internet like **web servers**. Private subnets are great for resources that you don't want to expose to the internet like **databases**.

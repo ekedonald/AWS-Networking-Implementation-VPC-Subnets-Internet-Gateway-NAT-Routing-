@@ -125,6 +125,15 @@ It is like a map/GPS. It tells the people (data) in your city (VPC) which way to
 ### Creating & Configuring Routing Tables
 The following steps are taken to create and configure a routing table to direct resources in the Public Subnet to the Internet Gateway:
 
+* Go to your VPC dashboard and click on `Route Tables`.
+
+* Click on the `Create route table` button.
+
+* Name the routing table `test-vpc-public-rtb`, select the `first-vpc` as your desired VPC and click on the `Create route table` button.
+
+* Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
+
+
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway
 In the AWS Virtual Private Cloud (VPC), private subnets are secluded areas where you can place resources that should not be exposed to the internet. But what if these resources need to access the internet for updates/downloads? This is where NAT Gateway comes in.

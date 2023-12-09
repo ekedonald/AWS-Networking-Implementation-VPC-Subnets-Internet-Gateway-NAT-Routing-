@@ -153,7 +153,30 @@ A Network Address Translation (NAT) Gateway acts like a secure door that only op
 It allows instances in your private subnet to connect to connect to outside services like Databases but restricts external services from connecting to these instances.
 
 ### Creating a NAT Gateway & Linking it to a Private Subnet
-The following steps are taken to create a NAT Gateway and link it to your Private Subnet.
+The following steps are taken to create a NAT Gateway and link it to your Private Subnets using a Routing Table:
+
+* Go to your VPC dashboard and click on the `Nat Gateways` tab.
+
+* Click on the `Create NAT gateway` button.
+
+* Use the following parameters when creating the NAT gateway then click on `Allocate Elastic IP` and `Create NAT gateway`:
+1. Name: test-nat
+2. Subnet: Public-Subnet1
+3. Connectivity Type: Public
+
+* Click on the `Route tables` tab.
+
+* Name the routing table `test-vpc-private-rtb`, select the `first-vpc` as your desired VPC and click on the `Create route table` button.
+
+* Click on `Edit Routes`.
+
+* Click on the `Add route` button, use the following parameters when adding a new route and click on the `save changes` button:
+1. Destination: 0.0.0.0/0
+2. Target: nat-<the_id_of_NAT_gateway_you_created> (i.e. test-nat)
+
+* Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
+
+* Select `Private-Subnet1` and click on the `save associations` button.
 
 ## Security Group & Network ACLs
 ### Understanding the Differences between Security Groups & Network Access Control Lists

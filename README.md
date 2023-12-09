@@ -141,6 +141,8 @@ The following steps are taken to create and configure a routing table to direct 
 
 * Select the 2 Public Subnets (i.e. Public-Subnet1 & Public-Subnet2) you created and click on the `save associations` button.
 
+_Note: By linking the 2 Public Subnets (i.e. Public-Subnet1 & Punlic-Subnet2) to the Internet Gateway (test-igw), they are now functioning as **Public Subnets**. If they were not linked, they will be functioning as **Private Subnets**._
+
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway
 In the AWS Virtual Private Cloud (VPC), private subnets are secluded areas where you can place resources that should not be exposed to the internet. But what if these resources need to access the internet for updates/downloads? This is where NAT Gateway comes in.

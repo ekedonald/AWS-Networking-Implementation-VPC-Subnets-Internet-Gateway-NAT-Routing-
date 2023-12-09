@@ -131,16 +131,15 @@ The following steps are taken to create and configure a routing table to direct 
 
 * Name the routing table `test-vpc-public-rtb`, select the `first-vpc` as your desired VPC and click on the `Create route table` button.
 
-* Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
-
-* Select the 2 Public Subnets (i.e. Public-Subnet1 & Public-Subnet2) you created and click on the `save associations` button.
-
 * Click on `Edit Routes`.
 
 * Click on the `Add route` button, use the following parameters when adding a new route and click on the `save changes` button:
 1. Destination: 0.0.0.0/0
 2. Target: igw-<the_id_of_internet_gateway_you_created> (i.e. test-igw)
 
+* Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
+
+* Select the 2 Public Subnets (i.e. Public-Subnet1 & Public-Subnet2) you created and click on the `save associations` button.
 
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway

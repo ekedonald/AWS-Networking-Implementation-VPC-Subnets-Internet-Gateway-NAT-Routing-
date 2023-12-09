@@ -141,7 +141,7 @@ The following steps are taken to create and configure a routing table to direct 
 
 * Select the 2 Public Subnets (i.e. Public-Subnet1 & Public-Subnet2) you created and click on the `save associations` button.
 
-_Note: By linking the 2 Public Subnets (i.e. Public-Subnet1 & Punlic-Subnet2) to the Internet Gateway (test-igw), they are now functioning as **Public Subnets**. If they were not linked, they will be functioning as **Private Subnets**._
+_Note: By linking the 2 Public Subnets (i.e. Public-Subnet1 & Punlic-Subnet2) to the Internet Gateway (test-igw), they function as **Public Subnets**. If they were not linked, they will continue to function as **Private Subnets**._
 
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway

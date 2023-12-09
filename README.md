@@ -11,17 +11,17 @@ A Default VPC which Amazon provides for you in each region (think of a region as
 ### Creating a new VPC
 The following steps are taken to create a VPC:
 
+* On the services search tab, type `VPC` to search for the VPC service.
+
 * On your VPC dashboard, click on the `Create VPC` button.
 
-* Use the following parameters when configuring the VPC:
+* Use the following parameters when configuring the VPC and click on the `Create VPC` button:
 1. Resource to create: VPC only
 2. Name tag: first-vpc
 3. IPv4 CIDR block: IPv4 CIDR manual input
 4. IPv4 CIDR: 10.0.0.0/16
 5. IPv6 CIDR block: No IPv6 CIDR block
 6. Tenancy: Default
-
-* Click on the `Create VPC` button.
 
 ### Creating & Configuring Subnets
 #### What are Subnets?
@@ -74,14 +74,12 @@ The following steps are taken to create 2 Private Subnets:
 2. Availability Zone: us-east-1a
 3. IPv4 Subnet CIDR Block: 10.0.1.0/24
 
-* Click on the `Add new subnet` button to create the 2nd Public Subnet.
+* Click on the `Add new subnet` button to create the 2nd Private Subnet.
 
-*  Use the following parameters when configuring the 2nd Private Subnet:
+*  Use the following parameters when configuring the 2nd Private Subnet and click on the `Create subnet` button:
 1. Subnet Name: Private-Subnet2
 2. Availability Zone: us-east-1b
 3. IPv4 Subnet CIDR Block: 10.0.2.0/24
-
-* Click on the `create subnet` button.
 
 _The 2 Private Subnets created are shown above_
 

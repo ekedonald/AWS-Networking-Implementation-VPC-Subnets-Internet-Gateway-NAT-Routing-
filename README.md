@@ -182,7 +182,26 @@ Security groups and network access lists (ACLs) are both important tools for sec
 
 #### Security Groups
 
+
 #### Network Access Control (NACLs)
+
+![nacls 1](./images/network%20acl.png)
+
+Network ACLs (Access Control Lists) can be likened to a security guard for a building, responsible for controlling inbound and outbound traffic at the subnet level in a cloud computing environment. Imagine you have a building with multiple rooms and entry points, and you want to ensure that only authorized individuals can enter and exit. In this analogy, the building represents your subnet, and the security guard represents the network ACL. 
+
+Similar to a security guard who verifies IDs and credentials before allowing entry into the building, a network ACL examines the IP addresses and ports of incoming and outgoing network traffic. It serves as a virtual barrier or perimeter security, defining rules that dictate which types of traffic are permitted or denied.
+
+For instance, a network ACL can be configured to allow incoming SSH (Secure Shell) traffic (on port 22) to a specific subnet, while blocking all other types of incoming traffic. It can also permit outgoing traffic from the subnet to a specific range of IP addresses on a certain port, while disallowing any other outbound connections.
+
+By implementing these rules, network ACLs act as a crucial line of defense, safeguarding your entire subnet from unauthorized access and malicious attacks. They ensure that only traffic meeting the specified criteria is allowed to enter or exit the subnet, while blocking or rejecting any unauthorized or potentially harmful traffic.
+
+It's important to note that network ACLs operate at the subnet level, meaning they control traffic for all instances within a subnet. They provide a broader scope of security compared to security groups, which operate at the instance level. Network ACLs are typically stateless, meaning that inbound and outbound traffic is evaluated separately, and specific rules must be defined for both directions.
+
+In summary, network ACLs function as a virtual security guard for your subnet, regulating inbound and outbound traffic at a broader level. They operate similarly to a security guard who controls access to a building by examining IDs, ensuring that only traffic meeting the defined rules is allowed to pass, and thereby providing protection against unauthorized access and malicious activities for your entire subnet.
+
+#### In Conclusion
+
+![nacls 2](./images/network%20acl2.png)
 
 In short, security groups and network ACLs are both important tools for securing your network on the AWS cloud but they serve different purposes and have different use cases. Security groups are like a bouncer at a club controlling inbound and outbound traffic to and from your resources at the individual resource level. Network ACLs on the other hand are like a security guard for a building controlling inbound and outbound traffic at the subnet level.
 
@@ -203,6 +222,8 @@ VPC Peering is a networking feature that allows you to connect 2 Virtual Private
 
 ### Introduction to VPN Connections
 Virtual Private Network (VPN) connections establish a secure and encrypted communication channel between your on-premises network and a cloud provider's network such as a VPC. VPN connections enable secure access to resources in the cloud from remote locations or connect on-premises networks with cloud resources.
+
+![vpc peering](./images/vpc%20peering.png)
 
 There are two primary types of VPN connections which are:
 

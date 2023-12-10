@@ -27,6 +27,8 @@ The following steps are taken to create a VPC:
 #### What are Subnets?
 Subnets are like smaller segments within a VPC that help you organize and manage your resources. Subnets are like dividing an office building into smaller sections, where each section represents a department. In this analogy, subnets are created to organize and manage the network effectively.
 
+![subnets](./images/sub.jpg)
+
 | Subnet Name     | Availability Zone | CIDR Block   |
 |-----------------|-------------------|--------------|
 | Public-Subnet1  | us-east-1a        | 10.0.11.0/24 |

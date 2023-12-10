@@ -1,4 +1,4 @@
-# AWS Networking Implementation (VPC, Subnets, Interet Gateway, NAT & Routing)
+# AWS Networking Implementation (VPC, Subnets, Internet Gateway, NAT & Routing)
 
 ## What Is an Amazon VPC?
 An Amazon Virtual Private Cloud (VPC) is like your own private section of the Amazon cloud where you can place and manage resources (i.e. servers or databases). You control incoming and outgoing traffic like a gated community.
@@ -102,7 +102,7 @@ To give your public subnet access to the main road (internet), you need an Inter
 #### Public Subnets
 Technically, the subnets are still private. To make the subnets function as public subnets, the following steps must be taken:
 * An Internet Gateway (IGW) attached to the VPC
-* Route Table with default route towards the IGW
+* Route Table with a default route towards the IGW
 * Public IP assigned to the AWS resources (i.e. EC2 Instances)
 
 #### Creating an Internet Gateway
@@ -116,7 +116,7 @@ The following steps are taken to create an Internet Gateway:
 
 * Click on the `Action` button and click `Attach to VPC`.
 
-* Select the `first-vpc` you created and clcik on the `Attach internet gateway` button.
+* Select the `first-vpc` you created and click on the `Attach internet gateway` button.
 
 
 ## What is a Routing Table?
@@ -141,7 +141,7 @@ The following steps are taken to create and configure a routing table to direct 
 
 * Select the 2 Public Subnets (i.e. Public-Subnet1 & Public-Subnet2) you created and click on the `save associations` button.
 
-_Note: By linking the 2 Public Subnets (i.e. Public-Subnet1 & Punlic-Subnet2) to the Internet Gateway (test-igw), they function as **Public Subnets**. If they were not linked, they will continue to function as **Private Subnets**._
+_Note: By linking the 2 Public Subnets (i.e. Public-Subnet1 & Punlic-Subnet2) to the Internet Gateway (test-igw), they function as **Public Subnets**. If they were not linked, they would continue to function as **Private Subnets**._
 
 ## NAT Gateway & Private Subnets
 ### Introduction to Private Subnets & NAT Gateway
@@ -150,7 +150,7 @@ In the AWS Virtual Private Cloud (VPC), private subnets are secluded areas where
 ### Understanding NAT Gateway
 A Network Address Translation (NAT) Gateway acts like a secure door that only opens one way. It allows your resources inside the private subnet to access the internet for things like updates and downloads but it doesn't allow anything from the internet to enter your private subnet.
 
-It allows instances in your private subnet to connect to connect to outside services like Databases but restricts external services from connecting to these instances.
+It allows instances in your private subnet to connect to outside services like Databases but restricts external services from connecting to these instances.
 
 ### Creating a NAT Gateway & Linking it to a Private Subnet
 The following steps are taken to create a NAT Gateway and link it to your Private Subnets using a Routing Table:
@@ -192,7 +192,7 @@ Just like a bouncer checks the IDs and credentials of people at the club's entra
 
 For example, a security group can be configured to allow incoming HTTP traffic (on port 80) to a web server, but block all other types of incoming traffic. Similarly, it can permit outgoing traffic from the web server to external databases on a specific port, while restricting all other outbound connections.
 
-By enforcing these rules, security groups act as a line of defense, helping to protect your resources from unauthorized access and malicious attacks. They ensure that only the traffic that meets the defined criteria is allowed to reach your resources, while blocking or rejecting any unauthorized or potentially harmful traffic.
+By enforcing these rules, security groups act as a line of defense, helping to protect your resources from unauthorized access and malicious attacks. They ensure that only the traffic that meets the defined criteria is allowed to reach your resources while blocking or rejecting any unauthorized or potentially harmful traffic.
 
 It's important to note that security groups operate at the instance level, meaning they are associated with specific instances and can control traffic at a granular level. They can be customized and updated as needed to adapt to changing security requirements.
 
@@ -206,13 +206,13 @@ Network ACLs (Access Control Lists) can be likened to a security guard for a bui
 
 Similar to a security guard who verifies IDs and credentials before allowing entry into the building, a network ACL examines the IP addresses and ports of incoming and outgoing network traffic. It serves as a virtual barrier or perimeter security, defining rules that dictate which types of traffic are permitted or denied.
 
-For instance, a network ACL can be configured to allow incoming SSH (Secure Shell) traffic (on port 22) to a specific subnet, while blocking all other types of incoming traffic. It can also permit outgoing traffic from the subnet to a specific range of IP addresses on a certain port, while disallowing any other outbound connections.
+For instance, a network ACL can be configured to allow incoming SSH (Secure Shell) traffic (on port 22) to a specific subnet while blocking all other types of incoming traffic. It can also permit outgoing traffic from the subnet to a specific range of IP addresses on a certain port while disallowing any other outbound connections.
 
-By implementing these rules, network ACLs act as a crucial line of defense, safeguarding your entire subnet from unauthorized access and malicious attacks. They ensure that only traffic meeting the specified criteria is allowed to enter or exit the subnet, while blocking or rejecting any unauthorized or potentially harmful traffic.
+By implementing these rules, network ACLs act as a crucial line of defense, safeguarding your entire subnet from unauthorized access and malicious attacks. They ensure that only traffic meeting the specified criteria is allowed to enter or exit the subnet while blocking or rejecting any unauthorized or potentially harmful traffic.
 
-It's important to note that network ACLs operate at the subnet level, meaning they control traffic for all instances within a subnet. They provide a broader scope of security compared to security groups, which operate at the instance level. Network ACLs are typically stateless, meaning that inbound and outbound traffic is evaluated separately, and specific rules must be defined for both directions.
+It's important to note that network ACLs operate at the subnet level, meaning they control traffic for all instances within a subnet. They provide a broader scope of security compared to security groups, which operate at the instance level. Network ACLs are typically stateless meaning that inbound and outbound traffic is evaluated separately, and specific rules must be defined for both directions.
 
-In summary, network ACLs function as a virtual security guard for your subnet, regulating inbound and outbound traffic at a broader level. They operate similarly to a security guard who controls access to a building by examining IDs, ensuring that only traffic meeting the defined rules is allowed to pass, and thereby providing protection against unauthorized access and malicious activities for your entire subnet.
+In summary, network ACLs function as virtual security guards for your subnet regulating inbound and outbound traffic at a broader level. They operate similarly to a security guard who controls access to a building by examining IDs, ensuring that only traffic meeting the defined rules is allowed to pass and thereby providing protection against unauthorized access and malicious activities for your entire subnet.
 
 #### In Conclusion
 
@@ -222,7 +222,7 @@ In short, security groups and network ACLs are both important tools for securing
 
 ## VPC Peering & VPN Connection
 ### Introduction to VPC Peering
-VPC Peering is a networking feature that allows you to connect 2 Virtual Private Clouds (VPCs) within the same cloud provider's network or across different regions. VPC Peering enables direct communication between VPCs allowing resources in each VPC to interact with eacg other as if they were on the same network. It provides a secure and private connection without the need for internet access. VPC Peering is commonly used to establish connectivity between VPCs in scenarios such as multi-tier applications, resource sharing or data replication.
+VPC Peering is a networking feature that allows you to connect 2 Virtual Private Clouds (VPCs) within the same cloud provider's network or across different regions. VPC Peering enables direct communication between VPCs allowing resources in each VPC to interact with each other as if they were on the same network. It provides a secure and private connection without the need for internet access. VPC Peering is commonly used to establish connectivity between VPCs in scenarios such as multi-tier applications, resource sharing or data replication.
 
 ### Benefits of VPC Peering
 * **Simplified Network Architecture**: VPC Peering simplifies network design by enabling direct communication between VPCs eliminating the need for complex networking configurations.

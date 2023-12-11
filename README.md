@@ -13,7 +13,11 @@ The following steps are taken to create a VPC:
 
 * On the services search tab, type `VPC` to search for the VPC service.
 
+![vpc search services](./images/1%20vpc%20search%20services.png)
+
 * On your VPC dashboard, click on the `Create VPC` button.
+
+![create vpc](./images/1%20create%20vpc%20button.png)
 
 * Use the following parameters when configuring the VPC and click on the `Create VPC` button:
 1. Resource to create: VPC only

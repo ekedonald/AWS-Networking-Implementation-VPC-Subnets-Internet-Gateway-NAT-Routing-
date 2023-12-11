@@ -27,6 +27,8 @@ The following steps are taken to create a VPC:
 5. IPv6 CIDR block: No IPv6 CIDR block
 6. Tenancy: Default
 
+![vpc parameters](./images/1%20vpc%20parameters.png)
+
 ### Creating & Configuring Subnets
 #### What are Subnets?
 Subnets are like smaller segments within a VPC that help you organize and manage your resources. Subnets are like dividing an office building into smaller sections, where each section represents a department. In this analogy, subnets are created to organize and manage the network effectively.

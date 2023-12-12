@@ -208,26 +208,44 @@ The following steps are taken to create a NAT Gateway and link it to your Privat
 
 * Go to your VPC dashboard and click on the `Nat Gateways` tab.
 
+![nat gateways](./images/6%20nat%20gateways.png)
+
 * Click on the `Create NAT gateway` button.
+
+![create nat gateway](./images/6%20create%20nat%20gateway.png)
 
 * Use the following parameters when creating the NAT gateway then click on `Allocate Elastic IP` and `Create NAT gateway`:
 1. Name: test-nat
 2. Subnet: Public-Subnet1
 3. Connectivity Type: Public
 
+![nat gateway parameters](./images/6%20nat%20gateway%20parameters.png)
+
 * Click on the `Route tables` tab.
+
+![route tables](./images/7%20edit%20routes.png)
 
 * Name the routing table `test-vpc-private-rtb`, select the `first-vpc` as your desired VPC and click on the `Create route table` button.
 
+![test-vpc-private-rtb](./images/7%20test-vpc-private-rtb.png)
+
 * Click on `Edit Routes`.
+
+![edit routes](./images/7%20edit%20routes.png)
 
 * Click on the `Add route` button, use the following parameters when adding a new route and click on the `save changes` button:
 1. Destination: 0.0.0.0/0
 2. Target: nat-<the_id_of_NAT_gateway_you_created> (i.e. test-nat)
 
+![route tables](./images/7%20route%20table%20parameters.png)
+
 * Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
 
+![subnet associations and edit subnet association](./images/7%20subnet%20associations%20and%20edit%20subnet%20association.png)
+
 * Select `Private-Subnet1` and click on the `save associations` button.
+
+![select subnets and save asscoiations](./images/7%20select%20private-subnet1%20and%20save%20associations.png)
 
 ## Security Group & Network ACLs
 ### Understanding the Differences between Security Groups & Network Access Control Lists

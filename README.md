@@ -186,7 +186,11 @@ The following steps are taken to create and configure a routing table to direct 
 
 * Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
 
+![subnets associations and edit subent association](./images/5%20subnet%20associations.png)
+
 * Select the 2 Public Subnets (i.e. Public-Subnet1 & Public-Subnet2) you created and click on the `save associations` button.
+
+![save associations](./images/5%20select%202%20pub%20subnets%20and%20save%20associations.png)
 
 _Note: By linking the 2 Public Subnets (i.e. Public-Subnet1 & Punlic-Subnet2) to the Internet Gateway (test-igw), they function as **Public Subnets**. If they were not linked, they would continue to function as **Private Subnets**._
 

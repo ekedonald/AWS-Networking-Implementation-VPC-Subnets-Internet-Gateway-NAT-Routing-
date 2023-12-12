@@ -241,7 +241,7 @@ The following steps are taken to create a NAT Gateway and link it to your Privat
 
 * Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
 
-![subnet associations and edit subnet association](./images/7%20subnet%20associations%20and%20edit%20subnet%20association.png)
+![subnet associations & edit subnet association](./images/7%20subnet%20associations%20and%20edit%20subnet%20association.png)
 
 * Select `Private-Subnet1` and click on the `save associations` button.
 

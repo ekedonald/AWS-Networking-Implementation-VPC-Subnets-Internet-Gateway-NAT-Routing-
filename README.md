@@ -138,14 +138,23 @@ The following steps are taken to create an Internet Gateway:
 
 * Go to your VPC dashboard and click on the `Internet Gateways` tab.
 
+![internet gateways](./images/4%20internet%20gateways.png)
+
 * Click on the `Create internet gateway` button.
+
+![create intenet gateway](./images/4%20create%20internet%20gateway.png)
 
 * Name the internet gateway `test-igw` and click on `Create internet gateway`.
 
+![test-igw and create internet gateway](./images/4%20test-igw%20and%20create%20igw.png)
+
 * Click on the `Action` button and click `Attach to VPC`.
+
+![action and attach to vpc](./images/4%20actions%20and%20attach%20to%20vpc.png)
 
 * Select the `first-vpc` you created and click on the `Attach internet gateway` button.
 
+![select first-vpc and attach internet gateway](./images/4%20select%20first-vpc%20and%20attach%20igw.png)
 
 ## What is a Routing Table?
 It is like a map/GPS. It tells the people (data) in your city (VPC) which way to go to reach their destination. For example, if the data wants to go to the internet, the Routing Table will tell it to take the road (Internet Gateway) that you built.

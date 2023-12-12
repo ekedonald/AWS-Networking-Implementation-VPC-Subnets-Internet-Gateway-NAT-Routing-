@@ -56,7 +56,7 @@ The following steps are taken to create 2 Public Subnets:
 
 ![create subnet](./images/2%20create%20subnet.png)
 
-* Select the VPC (i.e. first-vpc) you created.
+* Select the VPC (i.e. first-vpc) you created and clcik on the `Create subnet` button.
 
 ![select the vpc](./images/2%20select%20first-vpc.png)
 
@@ -78,7 +78,7 @@ The following steps are taken to create 2 Public Subnets:
 
 ![public subnet2 parameters](./images/2%20public%20subnet2%20parameters.png)
 
-![create subnet button](./images/3%20create%20subnet%20button.png)
+![public subnets created](./images/2%20created%20public%20subnets.png)
 _The 2 Public Subnets created are shown above_
 
 #### Creating a Private Subnet
@@ -86,20 +86,31 @@ The following steps are taken to create 2 Private Subnets:
 
 * Click on the `Create subnet` button.
 
-* Select the VPC (i.e. first-vpc) you created.
+![create subnet button](./images/3%20create%20subnet%20button.png)
+
+* Select the VPC (i.e. first-vpc) you created and click on the `Create subnet` button.
+
+![select the vpc](./images/3%20select%20first-vpc.png)
 
 *  Use the following parameters when configuring the 1st Private Subnet:
 1. Subnet Name: Private-Subnet1
 2. Availability Zone: us-east-1a
 3. IPv4 Subnet CIDR Block: 10.0.1.0/24
 
+![private subnet1](./images/3%20private%20subnet1%20parameters.png)
+
 * Click on the `Add new subnet` button to create the 2nd Private Subnet.
+
+![add new subnet](./images/2%20add%20new%20subnet.png)
 
 *  Use the following parameters when configuring the 2nd Private Subnet and click on the `Create subnet` button:
 1. Subnet Name: Private-Subnet2
 2. Availability Zone: us-east-1b
 3. IPv4 Subnet CIDR Block: 10.0.2.0/24
 
+![private subnet2](./images/3%20private%20subnet2%20parameters.png)
+
+![private subnets](./images/3%20created%20private%20subnets.png)
 _The 2 Private Subnets created are shown above_
 
 #### Working With Public & Private Subnets

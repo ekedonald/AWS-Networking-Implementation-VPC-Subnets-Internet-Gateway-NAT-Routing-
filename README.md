@@ -164,15 +164,25 @@ The following steps are taken to create and configure a routing table to direct 
 
 * Go to your VPC dashboard and click on `Route Tables`.
 
+![route tables](./images/5%20route%20tables.png)
+
 * Click on the `Create route table` button.
+
+![create route table](./images/5%20create%20route%20table.png)
 
 * Name the routing table `test-vpc-public-rtb`, select the `first-vpc` as your desired VPC and click on the `Create route table` button.
 
+![test-vpc-public-rtb](./images/5%20test-vpc-public-rtb.png)
+
 * Click on `Edit Routes`.
+
+![edit routes](./images/5%20edit%20routes.png)
 
 * Click on the `Add route` button, use the following parameters when adding a new route and click on the `save changes` button:
 1. Destination: 0.0.0.0/0
 2. Target: igw-<the_id_of_internet_gateway_you_created> (i.e. test-igw)
+
+![add route and save changes](./images/5%20add%20routes.png)
 
 * Click on the `Subnet associations` tab and click on the `Edit subnet association` button.
 
